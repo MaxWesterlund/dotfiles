@@ -1,0 +1,6 @@
+[general]
+import = ["/home/max/.cache/wal/colors-alacritty.toml"]
+live_config_reload = true
+
+[window]
+opacity = 0.6

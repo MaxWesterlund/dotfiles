@@ -1,0 +1,103 @@
+@import "/home/max/.cache/wal/colors-waybar.css";
+
+* {
+	font-family: "Noto Sans Mono";
+}
+
+window#waybar {
+	all:unset;
+	background: alpha(@background, .8);
+}
+
+.modules-left, .modules-center, .modules-right {
+	min-width: 64px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#clock {
+	font-size: 2rem;
+	font-weight: bold;
+	color: @color3;
+}
+
+tooltip {
+	opacity: 0;
+}
+
+#workspaces button {
+	all:unset;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	font-size: 1.8rem;
+	font-weight: bold;
+	color: @color2;
+}
+
+#workspaces button.active {
+	margin-right: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	transition: 0.4s;
+	color: @color1;
+}
+
+#workspaces button.active.empty {
+	color: @color2;
+}
+
+#workspaces button.empty {
+	color: @color8;
+}
+
+#workspaces button:hover {
+	color: @color1;
+}
+
+#workspaces button.empty:hover {
+	color: @color2;
+}
+
+#pulseaudio-slider {
+	all: unset;
+	min-height: 64px;
+	margin-bottom: 5px;
+}
+
+#pulseaudio-slider slider {
+	border: none;
+	background-image: none;
+	box-shadow: none;
+}
+
+#pulseaudio-slider trough {
+	all: unset;
+	background: @color8;
+}
+
+#pulseaudio-slider highlight {
+	all: unset;
+	min-width: 12px;
+	background: @color4;
+}
+
+#pulseaudio {
+	all: unset;
+	color: @color4;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+#language {
+	all:unset;
+	color: @color5;
+	font-size: 1rem;
+	font-weight: bold;
+	font-style: italic;
+}
+
+#custom-pacman {
+	all: unset;
+	color: @color6;
+	font-weight: bold;
+}

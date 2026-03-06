@@ -1,0 +1,122 @@
+@import "/home/max/.cache/wal/colors-waybar.css";
+
+@define-color window_bg_color #1f1f28;
+@define-color accent_bg_color #54546d;
+@define-color theme_fg_color #f2ecbc;
+@define-color error_bg_color #C34043;
+@define-color error_fg_color #DCD7BA;
+
+* {
+  all: unset;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+/* Window wrapper */
+.box-wrapper {
+  background-color: alpha(@background, 0.6);
+  padding: 20px;
+  border-radius: 7px;
+  border: 2px solid darker(@color1);
+}
+
+/* Input field */
+.input {
+  caret-color: @foreground;
+  background: alpha(@background, 0.0);
+  padding: 10px;
+  color: @foreground;
+  border-radius: 10px;
+}
+
+.input placeholder {
+  opacity: 0.5;
+}
+
+/* List items */
+.list {
+  color: @foreground;
+}
+
+.item-box {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+child:hover .item-box,
+child:selected .item-box {
+  background: alpha(@color2, 0.6);
+}
+
+.item-text {
+  font-size: 14px;
+}
+
+.item-subtext {
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+.item-image,
+.item-image-text {
+  margin-right: 10px;
+}
+
+/* Quick activation labels */
+.item-quick-activation {
+  margin-left: 10px;
+  background: alpha(@color2, 0.0);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Placeholders */
+.placeholder,
+.elephant-hint {
+  color: @foreground;
+  opacity: 0.5;
+}
+
+/* Keybinds display */
+.keybinds-wrapper {
+  border-top: 1px solid lighter(@window_bg_color);
+  font-size: 12px;
+  opacity: 0.5;
+  color: @foreground;
+}
+
+.keybind-bind {
+  font-weight: bold;
+  text-transform: lowercase;
+}
+
+/* Error display */
+.error {
+  padding: 10px;
+  background: @background;
+  color: @foreground;
+  border-radius: 5px;
+}
+
+/* Preview pane */
+.preview {
+  border: 2px solid alpha(@color2, 0.25);
+  padding: 10px;
+  border-radius: 10px;
+  color: @foreground;
+}
+
+/* Icon sizes */
+.normal-icons {
+  -gtk-icon-size: 16px;
+}
+
+.large-icons {
+  -gtk-icon-size: 32px;
+}
+
+/* Hide scrollbar */
+scrollbar {
+  opacity: 0;
+}
+<
